@@ -64,10 +64,10 @@ def test_dialogs_construct(qapp):
 def test_about_dialog_credits_and_version(qapp):
     from PyQt6.QtWidgets import QLabel
 
-    assert main.PROGRAM_VERSION == "0.2.0"
+    assert main.PROGRAM_VERSION == "0.5.0"
     dialog = AboutDialog()
     labels = [label.text() for label in dialog.findChildren(QLabel)]
-    assert "v0.2.0" in labels
+    assert "v0.5.0" in labels
     assert "Programado por @EdFasano70" in labels
 
 

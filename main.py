@@ -34,7 +34,7 @@ from PyQt6.QtWidgets import (
 
 PROGRAM_NAME = "kirashell"
 PROGRAM_TITLE = "KiraShell"
-PROGRAM_VERSION = "0.2.0"
+PROGRAM_VERSION = "0.5.0"
 PROGRAM_DESCRIPTION = "Facilita la conexión SSH a múltiples servidores"
 
 RESOURCES_DIR = Path(__file__).resolve().parent / "resources"
@@ -73,9 +73,6 @@ DARK_STYLE = """
     QPushButton { background-color: #3d3d3d; border: 1px solid #555;
         border-radius: 3px; padding: 4px 8px; color: #e0e0e0; }
     QPushButton:hover { background-color: #4d4d4d; }
-    QPushButton#connectButton { background-color: #FF9800; border: none;
-        color: #1e1e1e; font-weight: bold; }
-    QPushButton#connectButton:hover { background-color: #FFB74D; }
     #serverCard { background-color: #2d2d2d; border: 1px solid #444;
         border-radius: 6px; }
 """
