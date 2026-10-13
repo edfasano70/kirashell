@@ -9,3 +9,6 @@ dist/
 .mypy_cache/
 config.xml
 servidores.xml
+
+deb/*.deb
+*.spec

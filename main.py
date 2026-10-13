@@ -37,7 +37,16 @@ PROGRAM_TITLE = "KiraShell"
 PROGRAM_VERSION = "0.5.0"
 PROGRAM_DESCRIPTION = "Facilita la conexión SSH a múltiples servidores"
 
-RESOURCES_DIR = Path(__file__).resolve().parent / "resources"
+
+def _base_dir() -> Path:
+    # En un binario de PyInstaller los recursos se extraen en sys._MEIPASS.
+    base = getattr(sys, "_MEIPASS", None)
+    if base:
+        return Path(base)
+    return Path(__file__).resolve().parent
+
+
+RESOURCES_DIR = _base_dir() / "resources"
 ICONS_DIR = RESOURCES_DIR / "icons"
 LOGO_FILE = RESOURCES_DIR / "logo.png"
 
