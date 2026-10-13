@@ -5,12 +5,23 @@ Registra cada servidor con una **etiqueta**, **usuario**, **contraseña** y
 **dirección IP o nombre**, y los muestra organizados en tarjetas desde las que
 puedes **Conectar**, **Editar** o **Eliminar**.
 
+## Capturas
+
+| Ventana principal | Modo oscuro |
+| --- | --- |
+| ![Ventana principal](docs/screenshots/main.png) | ![Modo oscuro](docs/screenshots/main_dark.png) |
+
+| Nuevo servidor | Acerca de |
+| --- | --- |
+| ![Nuevo servidor](docs/screenshots/server_dialog.png) | ![Acerca de](docs/screenshots/about.png) |
+
 Estructura plana: todo el código en `main.py`, los recursos en `resources/` y `src/`
 reservado para futuros módulos.
 
 ```
 main.py            # toda la aplicación (MainWindow, diálogos, persistencia, main())
 resources/         # logo.png + icons/*.svg
+docs/screenshots/  # capturas para el README
 src/               # vacío (para módulos futuros)
 tests/             # pytest
 pyproject.toml     # ruff + pytest + metadatos
